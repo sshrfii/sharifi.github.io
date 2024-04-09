@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #250808;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #642b01;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-area: 100%;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.div2 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.div3 {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.div4 {
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.div5 {
+  grid-area: 5 / 1 / 6 / 4;
+}
+
+.div1 {
+  display: flex;
+  align-items: center;
+  justify-content: first baseline;
+}
+
+.connect a {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-size: 2vw;
+  color: #FFA500;
+}
+
+.connect {
+  text-decoration: none;
+  list-style: none;
+}
+
+.connect a:hover {
+  text-decoration: underline;
+}
+
+.name {
+  display: inline;
+  font-family: "Gloock", serif;
+  font-size: 5vw;
+  color: #ffff;
+  margin: 0 0 0 2vw;
+}
+
+.Hi {
+  display: inline;
+  font-family: "Gloock", serif;
+  font-size: 6vw;
+  color: #ffff;
+  margin: 0 0 0 2vw;
+}
+
+.div5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-size: 2vw;
+  color: #ffff;
+}
+
+/*.dark-mode .left {
+  background-color: #E1FFFA;
+}
+
+.dark-mode .right {
+  background-color: #2C4548;
+}
+
+.dark-mode .div5 {
+  color: #2C4548;
+}
+
+.dark-mode .Hi,
+.dark-mode .name,
+.dark-mode .connect a {
+  color: #2C4548;
+}
+
+.dark-mode .connect a:hover {
+  text-decoration: underline;
+}*/
+
+.parent4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
+  margin: 1vw;
+}
+
+.parent4 img {
+  width: 100%;
+  height: auto;
+}
+
+.parent4 img:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .left .Hi,
+  .left .name {
+    font-size: 8vw;
+  }
+.connect a{
+  font-size: 4vw;
+}
+  .right .parent4 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
